@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Hell</title>
+</head>
+<body>
+    <div></div>
+    <script>
+        setTimeout(function(){ 
+    document.querySelector('div').innerHTML=10; 
+    setTimeout(function(){ 
+        document.querySelector('div').innerHTML=9; 
+        setTimeout(function(){ 
+            document.querySelector('div').innerHTML=8;
+            setTimeout(function(){ 
+                document.querySelector('div').innerHTML=7; 
+                setTimeout(function(){ 
+                    document.querySelector('div').innerHTML=6; 
+                    setTimeout(function(){ 
+                        document.querySelector('div').innerHTML=5; 
+                        setTimeout(function(){ 
+                            document.querySelector('div').innerHTML=4; 
+                            setTimeout(function(){ 
+                                document.querySelector('div').innerHTML=3; 
+                                setTimeout(function(){ 
+                                    document.querySelector('div').innerHTML=2; 
+                                    setTimeout(function(){ 
+                                        document.querySelector('div').innerHTML=1; 
+                                        setTimeout(function(){ 
+                                            document.querySelector('div').innerHTML="Happ new year"; 
+                                        }, 1000);
+                                    }, 1000);
+                                }, 1000);
+                            }, 1000);
+                        }, 1000);
+                    }, 1000);
+                }, 1000);
+            }, 1000); 
+        }, 1000);
+    }, 1000);
+}, 1000);
+    </script>
+</body>
+</html>
